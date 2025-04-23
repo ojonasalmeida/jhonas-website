@@ -1,8 +1,8 @@
-import Image from "next/image";
-import profileImage from "../../public/images/discord-profile.jpeg";
-import insta from "../../public/images/instagram.png";
-import git from "../../public/images/github.png";
-import discord from "../../public/images/discord.png";
+// import Image from "next/image";
+// import profileImage from "../../public/images/discord-profile.jpeg";
+// import insta from "../../public/images/instagram.png";
+// import git from "../../public/images/github.png";
+// import discord from "../../public/images/discord.png";
 
 export default function Discord() {
   return (
