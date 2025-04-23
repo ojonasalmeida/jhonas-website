@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profileImage from "../public/images/profile.jpeg";
+import profileImage from "../public/images/discord-profile.jpeg";
 import insta from "../public/images/instagram.png";
 import git from "../public/images/github.png";
 import discord from "../public/images/discord.png";
@@ -12,16 +12,16 @@ export default function Home() {
         <div className="max-w-4xl w-full items-center lg:items-start justify-center flex flex-col max-xl:my-2 gap-1 -mt-2">
           <div className="flex flex-row items-center justify-between w-full max-xl:gap-2">
             <div className="relative shadow-black/5 shadow-none rounded-large">
-              <Image className="relative z-10 rounded-md shadow-black/5 transition-transform-opacity" src={profileImage} alt="Sou eu!" width={120}/>
+              <Image className="relative z-10 rounded-md shadow-white/5 transition-transform-opacity" src={profileImage} alt="Sou eu!" width={120}/>
               {/* <img className="relative z-10 rounded-md shadow-black/5 transition-transform-opacity" src="../public/images/profile.jpeg" width={"120px"}/> */}
-              <Image className="absolute z-0 inset-0 w-full h-full object-cover filter blur-lg scale-105 saturate-150 opacity-30 translate-y-1 rounded" src={profileImage} alt="Sou eu!" width={120}/>
+              <Image className="absolute z-0 inset-0 w-full h-full object-cover filter blur-lg scale-80 saturate-150 opacity-100  rounded" src={profileImage} alt="Sou eu!" width={120}/>
             </div>
             <div className="mt-24">
               <div className="flex gap-5 bg-neutral-900 p-2 rounded-md font-bold transition-all duration-200">
                 {/* <a id="casado" target="_blank" className="hover:brightness-200 hover:scale-105 transition duration-500 ease-in-out"><Image className="" src={alianca} alt="Sou eu!" width={30}/></a> */}
-                <a id="instagram" target="_blank" className="hover:brightness-200 transition duration-500 ease-in-out" href="https://www.instagram.com/stellajonas_/"><Image className="" src={insta} alt="Sou eu!" width={30}/></a>
+                <a id="instagram" target="_blank" className="hover:brightness-200 transition duration-500 ease-in-out" href="https://www.instagram.com/jonasalmeidas__/"><Image className="" src={insta} alt="Sou eu!" width={30}/></a>
                 <a id="github" target="_blank" className="hover:brightness-200 transition duration-500 ease-in-out" href=""><Image className="" src={git} alt="Sou eu!" width={30}/></a>
-                <a id="discord" target="_blank" className="hover:brightness-200 transition duration-500 ease-in-out" href=""><Image className="" src={discord} alt="Sou eu!" width={30}/></a>
+                <a id="discord" className="hover:brightness-200 transition duration-500 ease-in-out" href="/discord"><Image className="" src={discord} alt="Sou eu!" width={30}/></a>
               </div>
             </div>
           </div>
